@@ -28,17 +28,17 @@ jobs:
       run: ls -a
           
     - name: Run test New User
-      run: pytest -v -s test_1.py
+      run: pytest -v -s test_1.py test_2.py
     
-    - name: Run test Personal Account
-      run: pytest -v -s test_2.py
+#     - name: Run test Personal Account
+#       run: pytest -v -s test_2.py
     
-    - name: Run test Add To Cart
-      run: pytest -v -s test_3.py
+#     - name: Run test Add To Cart
+#       run: pytest -v -s test_3.py
     
-    - name: Run test Search
-      run: pytest -v -s test_4.py
+#     - name: Run test Search
+#       run: pytest -v -s test_4.py
     
-    - name: Run test Payment
-      run: pytest -v -s test_5.py
+#     - name: Run test Payment
+#       run: pytest -v -s test_5.py
       
