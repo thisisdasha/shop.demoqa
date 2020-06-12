@@ -23,6 +23,17 @@ jobs:
     - name: Install pytest
 #       uses: actions/setup-pytest@v1
       run: pip install pytest
+    
+    - name: Install WebDriver
+      run: |
+            wget https://chromedriver.storage.googleapis.com/76.0.3809.126/chromedriver_linux64.zip
+            unzip chromedriver_linux64.zip
+            sudo mv chromedriver /usr/local/bin/chromedriver
+            sudo chown root:root /usr/local/bin/chromedriver
+            sudo chmod +x /usr/local/bin/chromedriver
+
+    - name: Test chromedriver
+      run: chromedriver
       
     - name: View repository files
       run: ls -a
