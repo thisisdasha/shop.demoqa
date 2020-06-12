@@ -32,14 +32,12 @@ jobs:
             sudo chown root:root /usr/local/bin/chromedriver
             sudo chmod +x /usr/local/bin/chromedriver
 
-    - name: Test chromedriver
-      run: chromedriver
-      
+     
     - name: View repository files
       run: ls -a
           
     - name: Run test New User
-      run: pytest -v -s test_1.py test_2.py
+      run: pytest -v -s test_1.py 
     
 #     - name: Run test Personal Account
 #       run: pytest -v -s test_2.py
